@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: "Encode Sans Expanded", sans-serif;;
+
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: back;
+    display: flex;
+    
+}
+
+.x-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.x-logo img{
+    width: 28px;
+    height: 28px;
+}
+
+.x-logo:hover{
+    background-color: gray;
+}
+
+
+.menu{
+    width: auto;
+    height: 100vh;
+    padding: 0 25px;
+    border-right: 1px solid gray;
+}
+
+.menu ul{
+    padding:0;
+    list-style: none;
+    
+}
+
+.menu ul li .item i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.menu ul li .item{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    height: 20px;
+    border-radius: 30px;    
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li .item:hover{
+    background-color: grey;
+}
+
+.menu ul li .item.selected{
+    font-weight: 700;
+
+}
+
+
+/* -----------------------------------------*/
+
+
+.main{
+    width: 45%;
+    height: 100vh;
+}
+/* ------------------------------------------ */
+.mini-sections{
+    width: 35;
+    height: 100vh;
+}
+
+/* ------------------------------------------- */
+
+/*boton x */
+button.btn-x{
+    height: 50px;
+    background: rgb(29, 155, 240);
+    color: white;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 35px;
+    font-size: 18px;
+    width: 240px;
+    cursor: pointer;
+    border: 0 solid black;
+}
+
+button.btn-x:hover{
+    background-color: rgb(29, 155, 240, 0.85);
+}
+
