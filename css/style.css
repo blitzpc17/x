@@ -35,10 +35,17 @@ body{
 
 
 .menu{
-    width: auto;
+    width: 25%;
     height: 100vh;
-    padding: 0 25px;
     border-right: 1px solid gray;
+    display: flex;
+    justify-content: end;
+}
+
+.menu .contenido{
+    width: auto;
+    padding: 15px;
+
 }
 
 .menu ul{
@@ -77,8 +84,9 @@ body{
 
 
 .main{
-    width: 45%;
+    width: 35%;
     height: 100vh;
+    border-right: 1px solid grey;
 }
 
 /*----------------menu post ----------------------*/
@@ -160,6 +168,7 @@ body{
     outline: none; 
     padding: 10px; 
     font-size: 22px; 
+    box-sizing: border-box;
 }
 
 .create-post .post-editing .functions{
@@ -195,15 +204,231 @@ body{
 }
 
 
+/*--------- post  -------------------*/
+.post{
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* Estilizando la scrollbar para navegadores WebKit */
+.post::-webkit-scrollbar {
+    width: 5px;
+    background-color: black; /* Color de fondo de la scrollbar */
+}
+
+.post::-webkit-scrollbar-thumb {
+    background-color: black; /* Color de la barra de desplazamiento */
+    border-radius: 6px;
+    border: 2px solid black; /* Borde alrededor de la barra de desplazamiento */
+}
+
+.postr::-webkit-scrollbar-thumb:hover {
+    background-color: black; /* Color de la barra de desplazamiento al pasar el ratón */
+}
+
+.post::-webkit-scrollbar-track {
+    background-color: black; /* Color del track (la parte fija de la scrollbar) */
+}
+
+
+.post .item{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.post .item .img-perfil{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding:5px;
+}
+
+.post .item .img-perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.post .item .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    padding: 10px;
+}
+
+.post .item .container .names{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 20px;
+    padding:0 2px;
+}
+
+.post .item .container .names .tag{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;    
+}
+.post .item .container .names .options{
+    width: 10%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: gray;
+    font-weight: 700;
+}
+
+.tag span{
+    margin-right: 3px;
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+}
+.tag i{
+    color: #1D9BF0;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.tag p{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.post .item .container .names .options{
+    width: 10%;
+}
+
+.post .item .container .comentario{
+    color: white;
+    font-size:14px;
+    font-weight: 300;
+}
+
+.post .item .container .cuerpo{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post .item .container .cuerpo img{
+    width: 100%;
+    height: 100%;
+}
+
+.post .item .container .foot{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.post .item .container  .foot .function{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45px;
+
+   
+}
+
+
+
+
+
+
 
 
 
 
 /* ------------------------------------------ */
 .mini-sections{
-    width: 35;
+    width: 30%;
     height: 100vh;
+    padding-left: 25px;
+    box-sizing: border-box;
 }
+
+.sections{
+    width: 65%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;    
+}
+
+.sections .card{
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+}
+.sections .card .card-body,
+.sections .card .card-header{
+    color: white;
+}
+
+
+.sections .card .card-header h3{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sections .card .card-body p{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.live{
+    width: 100%;
+}
+
+.live .item .name{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.live .item .name img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.live .item .name p{
+    color: white;
+    font-weight:700;
+    font-size: 12px;
+}
+
+.live .item .titular{
+    max-height: 75px;
+    min-height: 50px;
+}
+
+
+
+
 
 /* ------------------------------------------- */
 
