@@ -214,21 +214,22 @@ body{
 }
 
 /* Estilizando la scrollbar para navegadores WebKit */
+.mini-sections::-webkit-scrollbar,
 .post::-webkit-scrollbar {
     width: 5px;
     background-color: black; /* Color de fondo de la scrollbar */
 }
-
+.mini-sections::-webkit-scrollbar-thumb,
 .post::-webkit-scrollbar-thumb {
     background-color: black; /* Color de la barra de desplazamiento */
     border-radius: 6px;
     border: 2px solid black; /* Borde alrededor de la barra de desplazamiento */
 }
-
+.mini-sections::-webkit-scrollbar-thumb:hover,
 .postr::-webkit-scrollbar-thumb:hover {
     background-color: black; /* Color de la barra de desplazamiento al pasar el ratón */
 }
-
+.mini-sections::-webkit-scrollbar-track,
 .post::-webkit-scrollbar-track {
     background-color: black; /* Color del track (la parte fija de la scrollbar) */
 }
@@ -361,10 +362,11 @@ body{
     height: 100vh;
     padding-left: 25px;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .sections{
-    width: 65%;
+    width: 72%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -394,7 +396,7 @@ body{
 }
 
 .sections .card .card-body p{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -419,12 +421,108 @@ body{
     color: white;
     font-weight:700;
     font-size: 12px;
+    margin: 0;
 }
 
 .live .item .titular{
     max-height: 75px;
-    min-height: 50px;
+    min-height: 50px;  
 }
+.live .item .titular p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.happening{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.happening .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.happening .item .title,
+.happening .item .posts{
+    font-size: 10px;
+    color: gray;
+    font-weight: 500;
+    margin: 0;
+}
+
+.happening .item .brand{
+    font-size: 12px;
+    color: white;
+    font-weight: 700; 
+    margin: 0;   
+}
+
+.sections .card .card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections .card .card-footer p{
+    color: #1D9BF0;
+}
+
+
+.follows{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.follows .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.follows .item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.follows .item .body{
+    display: flex;
+    flex-direction: column;
+}
+.follows .item .body p{
+    margin: 0;
+    text-align: left;
+}
+
+.follows .item .body .name{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.follows .item .body .tag{
+    color: grey;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.btn-follow{
+    background: #f1f1f1;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: 700;
+}
+
 
 
 
